@@ -1,1 +1,1 @@
-# Color-Catcher
+# Color Catcher
