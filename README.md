@@ -2,14 +2,14 @@
 
 
 
-  <pre>
-   ██████╗ ██████╗ ██╗      ██████╗ ██████╗ ███████╗██████╗ 
-  ██╔════╝██╔═══██╗██║     ██╔════╝██╔═══██╗██╔════╝██╔══██╗
-  ██║     ██║   ██║██║     ██║     ██║   ██║█████╗  ██████╔╝
-  ██║     ██║   ██║██║     ██║     ██║   ██║██╔══╝  ██╔══██╗
-  ╚██████╗╚██████╔╝███████╗╚██████╗╚██████╔╝███████╗██║  ██║
-   ╚═════╝ ╚═════╝ ╚══════╝ ╚═════╝ ╚═════╝ ╚══════╝╚═╝  ╚═╝
-  </pre>
+<pre>
+<span style="color:#ff4d4d;">  ██████╗ ██████╗ ██╗      ██████╗ ██████╗ ██╗   ██╗██████╗ </span>
+<span style="color:#ff944d;"> ██╔════╝██╔═══██╗██║     ██╔════╝██╔═══██╗██║   ██║██╔══██╗</span>
+<span style="color:#ffd24d;"> ██║     ██║   ██║██║     ██║     ██║   ██║██║   ██║█████╔╝</span>
+<span style="color:#4dff88;"> ██║     ██║   ██║██║     ██║     ██║   ██║██║   ██║██╔══██╗</span>
+<span style="color:#4db8ff;"> ╚██████╗╚██████╔╝███████╗╚██████╗╚██████╔╝╚██████╔╝██║  ██║</span>
+<span style="color:#b84dff;">  ╚═════╝ ╚═════╝ ╚══════╝ ╚═════╝ ╚═════╝  ╚═════╝ ╚═╝  ╚═╝</span>
+</pre>
 
 <p align="center">
   A fast-paced neon arcade game built with <b>Pygame</b><br>
@@ -86,11 +86,20 @@ Press: R
 
 ## 🚀 Installation
 
-### 1. Install dependencies
+### 1. Clone this repository:
+```bash
+git clone https://github.com/DevWithSiddharth/Color-Catcher.git
+```
+
+
+
+
+
+### 2. Install dependencies
 ```bash
 pip install pygame
 ```
-### 2. Run the game
+### 3. Run the game
 ```bash
  python main.py
  ```
@@ -110,7 +119,12 @@ Every interaction is designed to feel responsive and satisfying:
 The game gradually shifts from calm control → chaotic survival, pushing your reflexes and focus.
 
 
+---
 
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ---
 
