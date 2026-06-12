@@ -90,7 +90,6 @@ class Basket:
 
         self.shake_offset = pygame.Vector2(0, 0)
 
-        # ✅ CONTROL STATE
         self.mode = "mouse"
         self.last_mouse_x = pygame.mouse.get_pos()[0]
 
@@ -109,22 +108,13 @@ class Basket:
 
         keyboard_used = left or right
 
-        # detect real mouse movement
         mouse_moved = abs(mouse_x - self.last_mouse_x) > 5
         self.last_mouse_x = mouse_x
-
-        # -----------------------------
-        # MODE SWITCH (STRICT)
-        # -----------------------------
 
         if keyboard_used:
             self.mode = "keyboard"
         elif mouse_moved:
             self.mode = "mouse"
-
-        # -----------------------------
-        # MOVEMENT (NO MIXING)
-        # -----------------------------
 
         if self.mode == "keyboard":
             direction = right - left
@@ -132,17 +122,9 @@ class Basket:
         else:
             self.pos.x = mouse_x
 
-        # -----------------------------
-        # clamp
-        # -----------------------------
-
         half_w = (self.base_size.x * self.scale.x) / 2
         self.pos.x = max(half_w, min(width - half_w, self.pos.x))
         self.pos.y = height - 80
-
-        # -----------------------------
-        # effects
-        # -----------------------------
 
         self.scale += (pygame.Vector2(1, 1) - self.scale) * 10 * dt
         self.red_flash_time = max(0, self.red_flash_time - dt)
